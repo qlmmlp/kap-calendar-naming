@@ -1,0 +1,20 @@
+{
+  "name": "kap-calendar-naming",
+  "version": "1.0.0",
+  "description": "Automatically name Kap recordings based on calendar events",
+  "main": "index.js",
+  "keywords": [
+    "kap-plugin",
+    "calendar",
+    "naming"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@googleapis/calendar": "^5.0.0",
+    "moment": "^2.29.4"
+  },
+  "kap": {
+    "version": "*"
+  }
+}
