@@ -3,6 +3,11 @@
   "version": "1.0.0",
   "description": "Automatically name Kap recordings based on calendar events",
   "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "lint": "eslint .",
+    "prepublishOnly": "npm run test && npm run lint"
+  },
   "keywords": [
     "kap-plugin",
     "calendar",
@@ -13,6 +18,13 @@
   "dependencies": {
     "@googleapis/calendar": "^5.0.0",
     "moment": "^2.29.4"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "eslint": "^8.56.0",
+    "eslint-config-xo": "^0.44.0",
+    "kap-plugin-test": "^1.0.0",
+    "kap-plugin-mock-context": "^1.0.0"
   },
   "kap": {
     "version": "*"
